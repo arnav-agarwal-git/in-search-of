@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lora&display=swap');
+
+
+body{
+	font-family: 'Lora', serif;
+	font-size:16px;
+	line-height:1.6em;
+	background-color:#f4f1eb;
+	margin:0;
+	background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	opacity: 0;
+	transition: opacity 0.5s ease-in;
+}
+
+body.fade-in{
+	opacity: 1;
+} 
+
+#mainHeader a{
+	text-decoration:none;
+	color:#a8a093;
+	transition: color 0.7s ease;
+}
+
+#mainHeader a:hover{
+	color:#006233;
+}
+
+#mainHeader a:active{
+	color: #8e7aa9;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	position: relative;
+}
+
+#mainHeader{
+	font-family: Garamond, serif;
+	background:#1a1a1a;
+	color:#a8a093;
+	text-align:left;
+	font-size: 26px;
+	padding:8px;
+	line-height:2em;
+	padding-bottom:0;
+}
+
+#navbar{
+	text-align:right;
+	font-size: 18px;
+}
+
+#navbar a{
+	text-decoration:none;
+	color:#dcd6cc;
+	transition: color 0.3s ease;
+}
+
+#navbar a:hover{
+	color:#8e7aa9;
+}
+
+#navbar a:active{
+	color:#006233;
+}
+
+#navbar li{
+	display:inline;
+	padding-right:35px;
+}
+
+#navbar ul{
+	padding:0;
+	list-style:none;
+}
+
+.heroSection{
+	text-align:center;
+	color:#2b2b2b;
+/*	margin: 60px auto; */
+	margin: auto;
+	margin-top: 3.2rem;
+	margin-bottom: 0;
+	width: 90%;
+	max-width: 800px;
+	padding: 40px;
+	padding-bottom: 0;
+}
+
+.mainQuote{
+	font-family: "Courier New", Courier, serif;
+	font-size:30px;
+	color: #221d25;
+	line-height: 125%;
+}
+
+.quoteSubtext{
+	color: #473f53;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+.button{
+	text-align:center;
+	background-color: #a59ccf;
+	color: #1c1a2d;
+	padding: 1em 1.5em;
+	font-family: 'Georgia', serif;
+	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.button:hover{
+	background-color: #8d7ed6;
+}
+
+.buttonSection{
+	margin-top: 10%;
+}
+
+.recentThoughts {
+	position: fixed;
+	bottom: 3vw;
+	left: 3vw;
+	background-color: #f3f9e6;
+	color: #2b2b2b;
+	font-family: "Caveat", cursive;
+	width: 25vw;
+	max-width: 300px;
+	min-width: 200px;
+	padding: 1.5vw;
+	border: 1px solid #d6cfa3;
+	border-radius: 6px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+	transform: rotate(-0.8deg);  
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recentThoughts:hover{
+	transform: rotate(0deg) scale(1.02);
+	box-shadow: 6px 6px 12px rgba(0,0,0,0.2);
+}
+
+.recentThoughts:before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 40px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 2px;
+  opacity: 0.4;
+  transform: rotate(-4deg);
+}
+
+.recentThoughts h4 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.recentThoughts ul {
+  list-style-type: "* ";
+  padding-left: 20px;
+  margin: 0;
+}
+
+.recentThoughts li {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.divider{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 0;
+}
+
+.divider img{
+	overflow: hidden;
+}
+
+.squareDivider{
+	margin: 20px 0px 0px 50px;
+	max-width: 500px;
+}
+
+.iceDivider{
+	margin: 0px 0px 0px 0px;
+	max-width: 1000px;
+	height: 200px;
+}
+
+
+.entry {
+  margin: 1.5em 0;
+  padding: 1em;
+  border-left: 4px solid var(--accent);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.entry:hover {
+  transform: translateX(4px);
+}
+
+.quote blockquote {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.author {
+  font-style: italic;
+  color: #888;
+  margin-top: 0.5em;
+}
+
+.reflection p {
+  font-family: 'Cormorant Garamond', serif;
+  color: #222;
+}
+
+.idea {
+  background: #fffbe6;
+  border-color: #f1c40f;
+}
+
+.synthesis {
+  background: #e9f5ff;
+  border-color: #3498db;
+}
+
+
+
+#mainFooter{
+	text-align:center;
+	padding:5px;
+	margin-top: 9%;
+	font-style:italic;
+	font-size: 14px;
+	background-color:#2b2b2b;
+	color:#f4f1eb;
+	opacity: 0.9;
+	bottom: 0;
+}
